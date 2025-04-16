@@ -23,6 +23,33 @@ $pokemon_info = mysqli_fetch_all($result, MYSQLI_ASSOC);
     </title>
 
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <div class="superheld-container">
+    <table>
+        <thead>
+            <tr>
+                <th>Naam</th>
+                <th>Kracht</th>
+                <th>Type</th>
+                <th>Afbeelding</th>
+                <th>Created</th>
+                <th>Updated</th>
+            </tr>
+        </thead>
+        <tbody>
+            <?php foreach ($helden as $held): ?>
+                <tr>
+                    <td><?php echo $held['naam']; ?></td>
+                    <td><?php echo $held['kracht']; ?></td>
+                    <td><?php echo $held['type']; ?></td>
+                    <td><?php echo $held['afbeelding']; ?></td>
+                    <td><?php echo $held['created_at']; ?></td>
+                    <td><?php echo $held['updated_at']; ?></td>
+                </tr>
+            <?php endforeach; ?>
+        </tbody>
+    </table>
+</div>
 </head>
 
 <body class="bg-gray-100">
@@ -53,7 +80,7 @@ $pokemon_info = mysqli_fetch_all($result, MYSQLI_ASSOC);
                         <div class="p-6">
                             <h3 class="mb-2 text-xl font-bold"><?php echo $pokemon["name"]; ?></h3>
                             <p class="mb-4 text-gray-600"><?php echo $pokemon["type"]; ?></p>
-                            <a href="pokemon_detail_simple.php?id=<?php echo $pokemon["id"]; ?>" class="text-blue-600 hover:text-blue-800">Meer informatie →</a>
+                            <a href="pokemon_detail.php?id=<?php echo $pokemon["id"]; ?>" class="text-blue-600 hover:text-blue-800">Meer informatie →</a>
                         </div>
                     </div>
                 <?php } ?>
