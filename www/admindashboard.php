@@ -7,7 +7,7 @@ if (!isset($_SESSION['user_id'])) {
     exit();
 }
 
-if($user['role'] != 'admin'){
+if($_SESSION['role'] != 'admin'){
   header('Location: user-dashboard.php');
   exit;
 }
@@ -21,7 +21,7 @@ if($user['role'] != 'admin'){
     <title>Document</title>
 </head>
 <body>
-    welkom <?php $_SESSION['firstname'];?>!
+    welkom admin <?php echo$_SESSION['firstname'];?>!
     <div>
      <a href=""></a>
     </div>

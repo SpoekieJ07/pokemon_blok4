@@ -5,7 +5,7 @@ if (!isset($_POST['email_form'])) {
     exit;
 }
 
-if (!isset($_POST['password_form'])) {
+if (!isset($_POST['wachtwoord_form'])) {
     echo "Geen wachtwoord veld gevonden";
     exit;
 }
@@ -15,13 +15,13 @@ if (empty($_POST['email_form'])) {
     exit;
 }
 
-if (empty($_POST['password_form'])) {
+if (empty($_POST['wachtwoord_form'])) {
     echo "Geen wachtwoord ingevuld";
     exit;
 }
 
 $email = $_POST['email_form'];
-$password = $_POST['password_form'];
+$password = $_POST['wachtwoord_form'];
 
 
 require 'database_connection.php';

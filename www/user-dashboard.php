@@ -15,7 +15,7 @@ if (!isset($_SESSION['user_id'])) {
     <title>Document</title>
 </head>
 <body>
-    welkom <?php $_SESSION['firstname'];?>!
+    welkom user <?php echo$_SESSION['firstname'];?>!
     <div>
      <a href=""></a>
     </div>
