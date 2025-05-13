@@ -6,7 +6,7 @@ $pokemon_id = $_GET['id'];
 //connect to the database
 require 'database_connection.php';
 
-// Use mysqli_query instead of prepared statement
+// Use mysq-+----------_query instead of prepared statement
 $query = "SELECT * FROM cards WHERE id = $pokemon_id";
 $result = mysqli_query($conn, $query);
 $pokemon = mysqli_fetch_assoc($result);
