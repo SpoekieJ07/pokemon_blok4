@@ -26,6 +26,7 @@ $pokemon_info = mysqli_fetch_all($result, MYSQLI_ASSOC);
 </head>
 
 <body class="bg-gray-100">
+    <?php include 'header.php'; ?>
     <?php include 'navbar.php'; ?>
 
     <!-- Main Content -->
@@ -83,6 +84,7 @@ $pokemon_info = mysqli_fetch_all($result, MYSQLI_ASSOC);
                     <p class="text-gray-400">Locatie: Amsterdam, Nederland</p>
                 </div>
             </div>
+            <?php include 'footer.php'; ?>
         </footer>
     </div>
 </body>
