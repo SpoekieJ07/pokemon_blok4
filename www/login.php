@@ -9,14 +9,15 @@
 <body>
     <form action="login_process.php" method="post">
     <div class="form-group">
-               <label for="type">email*</label>
-               <input type="text" name="email_form" id="type" class="form-control" >
+               <label for="email">email*</label>
+               <input type="email" name="email_form" id="email" class="form-control" >
     </div>
       <div class="form-group">
-            <label for="type">password*</label>
-            <input type="text" name="wachtwoord_form" id="type" class="form-control" >
+            <label for="password">password*</label>
+            <input type="password" name="wachtwoord_form" id="password" class="form-control" >
       </div>
-      <button type="submit">Create</button>
+      <button type="submit">login</button>
+
     </form>
 </body>
 </html>

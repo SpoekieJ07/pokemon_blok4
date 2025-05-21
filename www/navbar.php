@@ -11,6 +11,7 @@
                 <li><a href="#" class="text-gray-300 hover:text-white">Over Ons</a></li>
                 <li><a href="#" class="text-gray-300 hover:text-white">Contact</a></li>
                 <li><a href="pokemon_create.php" class="text-gray-300 hover:text-white">create</a></li>
+                <li><a href="login.php" class="text-gray-300 hover:text-white">login</a></li>
             </ul>
         </div>
     </nav>
